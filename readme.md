@@ -18,3 +18,7 @@ Add your new provider to the `providers` array of `config/app.php`:
       // ...
   ],
 ```
+Publish config
+```php
+php artisan vendor:publish --provider="CodingPhase\ReferenceGenerator\ReferenceGeneratorServiceProvider"
+```

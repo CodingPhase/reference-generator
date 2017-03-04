@@ -21,6 +21,8 @@ class ReferenceGenerator extends RandomStringGenerator
      */
     public function __construct($model)
     {
+        parent::__construct();
+
         $this->model = $model;
         $this->referenceColumn = config('reference-generator.default_column');
     }
